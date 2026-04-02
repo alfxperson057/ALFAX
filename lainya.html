@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ALFAX</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="stylee.css">
+</head>
+
+<body>
+
+<!-- Konten Akan Muncul Di Sini -->
+<div class="section-container">
+  <div id="content"></div>
+</div>
+
+<div class="cta-kembali">
+    <a href="index.html#services" class="btn-primary">⬅ Kembali</a>
+</div>
+
+<!-- SCRIPT TARUH DI BAWAH -->
+<script>
+const params = new URLSearchParams(window.location.search);
+const menu = params.get("menu");
+const content = document.getElementById("content");
+
+if(menu === "a"){
+    content.innerHTML = `
+<section class="services" id="services">
+  <div class="container">
+
+    <!-- HEADER -->
+    <div class="section-header">
+      <h2 class="section-title">Gabung grub!</h2>
+      <p class="section-desc">
+        pilih grup/saluran sesuai kebutuhan!.
+      </p>
+    </div>
+
+    <!-- CARD WRAPPER -->
+    <div class="card-wrapper">
+
+      <!-- 1 -->
+      <div class="card">
+        <a href="https://chat.whatsapp.com/LtX7mjTg2fwIHPI6M9jVcL" target="_blank">
+          <div class="card-content">
+            <i class="fab fa-whatsapp"></i>
+            <h3>cMafia trader</h3>
+            <p>
+              Tempat berkumpulnya para pemburu profit. Di sini kita belajar bareng, berbagi setup, dan saling edukasi tentang psikologi trading. No spam, no scam. Kita kuasai pasar bareng-bareng!
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <!-- 2 -->
+      <div class="card">
+        <a href="https://chat.whatsapp.com/CXA8fYBFKMF53qvqrwaqTx" target="_blank">
+          <div class="card-content">
+            <i class="fab fa-whatsapp"></i>
+            <h3>Cyber developers</h3>
+            <p>
+              Collaborative Coding & Innovation. Wadah bagi para developer untuk berbagi ilmu, bertanya soal error, dan kolaborasi proyek.
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <!-- 3 -->
+      <div class="card">
+        <a href="https://chat.whatsapp.com/LSkPdoFXT7n2mN4QRKAhbp" target="_blank">
+          <div class="card-content">
+            <i class="fab fa-whatsapp"></i>
+            <h3>Promosi digital</h3>
+            <p>
+              Jual beli produk digital:
+              Website, template, video, e-book & asset lainnya.
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <!-- 4 -->
+      <div class="card">
+        <a href="https://chat.whatsapp.com/LOSiXcpRVQPA2IsOiORll9" target="_blank">
+          <div class="card-content">
+            <i class="fab fa-whatsapp"></i>
+            <h3>V160 INDONESIA</h3>
+            <p>
+              Diskusi motor 160cc, perawatan & modifikasi biar makin keren.
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <!-- 5 -->
+      <div class="card">
+        <a href="https://chat.whatsapp.com/ETkN8yFUb8KCEysxmCEX53" target="_blank">
+          <div class="card-content">
+            <i class="fab fa-whatsapp"></i>
+            <h3>JB akun game indonesia</h3>
+            <p>
+              Jual beli akun aman:
+              Verified seller, rekber admin, anti scam.
+            </p>
+          </div>
+        </a>
+      </div>
+
+    </div>
+
+    <!-- HEADER SALURAN -->
+    <div class="section-header" style="margin-top:60px;">
+      <h2 class="section-title">Gabung saluran!</h2>
+    </div>
+
+    <!-- CARD SALURAN -->
+    <div class="card-wrapper">
+
+      <div class="card">
+        <a href="https://whatsapp.com/channel/0029VbC5rMU8V0tkrVbQMV39" target="_blank">
+          <div class="card-content">
+            <i class="fab fa-whatsapp"></i>
+            <h3>Free ebook trading & bisnis</h3>
+            <p>
+              Ebook trading, crypto, saham & bisnis digital. Update GRATIS tiap minggu.
+            </p>
+          </div>
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+`;
+}
+else if(menu === "b"){
+    content.innerHTML = `
+
+<section class="services" id="services">
+  <div class="container">
+
+    <!-- HEADER -->
+    <div class="section-header">
+      <h2 class="section-title">Gabung sekarang!</h2>
+      <p class="section-desc">
+        pilih grup sesuai kebutuhan
+      </p>
+    </div>
+
+    <!-- CARD WRAPPER -->
+    <div class="card-wrapper">
+
+      <div class="card">
+        <a href="https://www.facebook.com/share/g/1DgLpyzHYk/" target="_blank">
+          <div class="card-content">
+            <i class="fab fa-facebook-f"></i>
+            <h3>Judul 1</h3>
+            <p>Deskripsi disini</p>
+          </div>
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+    `;
+}
+else if(menu === "c"){
+    content.innerHTML = `
+        <section class="services" id="services">
+  <div class="container">
+
+    <!-- HEADER -->
+    <div class="section-header">
+      <h2 class="section-title">Gabung sekarang!</h2>
+      <p class="section-desc">
+        pilih grup sesuai kebutuhan
+      </p>
+    </div>
+
+    <!-- CARD WRAPPER -->
+    <div class="card-wrapper">
+
+      <!-- Telegram -->
+      <div class="card">
+        <a href="https://t.me/+sE-XW4UMI54yMTU1" target="_blank">
+          <div class="card-content">
+            <i class="fab fa-telegram-plane"></i>
+            <h3>Telegram Group</h3>
+            <p>
+              Bergabung di grup Telegram kami untuk mendapatkan buku PDF gratis dan premium, serta berdiskusi seputar coding, trading, dan produk digital.
+            </p>
+          </div>
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+    `;
+}
+else if(menu === "d"){
+    content.innerHTML = `
+        <section class="services" id="beli">
+  <div class="container">
+
+    <!-- HEADER -->
+    <div class="section-header">
+      <h2 class="section-title">Beli sekarang!</h2>
+      <p class="section-desc">
+        pilih produk ditoko sesuai kebutuhan
+      </p>
+    </div>
+
+    <!-- CARD WRAPPER -->
+    <div class="card-wrapper">
+
+      <!-- Lynk ID -->
+      <div class="card">
+        <a href="https://lynk.id/allstorynestdigital" target="_blank">
+          <div class="card-content">
+            <i class="fas fa-link"></i>
+            <h3>Lynk ID</h3>
+            <p>
+              Masuk ke Lynk.id kami, banyak produk yang bisa Anda jual kembali dengan keuntungan menarik. Yuk mulai usaha sekarang.
+            </p>
+          </div>
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+    `;
+}
+else if(menu === "e"){
+    content.innerHTML = `
+      <section class="services" id="toko">
+  <div class="container">
+
+    <!-- HEADER -->
+    <div class="section-header">
+      <h2 class="section-title">Gabung sekarang!</h2>
+      <p class="section-desc">
+        cari toko atau cenel lainya sesuai kebutuhan!.
+      </p>
+    </div>
+
+    <!-- CARD WRAPPER -->
+    <div class="card-wrapper">
+
+      <!-- Shopee -->
+      <div class="card">
+        <a href="https://shopee.com/xxxx" target="_blank">
+          <div class="card-content">
+            <i class="fab fa-shopify"></i>
+            <h3>Shopee</h3>
+            <p>Lihat produk kami di Shopee</p>
+          </div>
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+    `;
+}
+else{
+    content.innerHTML = "<h2>Pilih menu dulu</h2>";
+}
+</script>
+
+<!-- Statcounter -->
+<script type="text/javascript">
+var sc_project=13204720; 
+var sc_invisible=1; 
+var sc_security="fe599e5f"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js" async></script>
+
+<script src="secrip.js"></script>
+
+</body>
+
+</html>
